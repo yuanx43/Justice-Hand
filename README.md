@@ -1,4 +1,3 @@
-###### tags: `LSA` `1101`
 # Justice Hand
 - [Concept Development](#Concept_Develop)
 - [硬體設備](#device)
