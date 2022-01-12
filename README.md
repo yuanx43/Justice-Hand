@@ -398,6 +398,8 @@ updater = Updater(token=token, use_context=False)
 - telegram robot
     - [Python Telegram Bot 教學 (by 陳達仁)](https://hackmd.io/@truckski/HkgaMUc24)
     - [【Telegram API】Python打造Telegram機器人手把手教學：最輕鬆最詳細的方法](https://pixnashpython.pixnet.net/blog/post/32391757-%E3%80%90telegram-api%E3%80%91python%E6%89%93%E9%80%A0telegrame%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99)
+- 新增service
+    - [Linux 建立自訂 Systemd 服務教學與範例](https://blog.gtwang.org/linux/linux-create-systemd-service-unit-for-python-echo-server-tutorial-examples/)
 ## <a id="future"></a>未來展望
 - 影像辨識:
     - 將惡鄰居的樣貌拍起來
