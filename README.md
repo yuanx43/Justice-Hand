@@ -1,3 +1,4 @@
+###### tags: `LSA` `1101`
 # Justice Hand
 - [Concept Development](#Concept_Develop)
 - [硬體設備](#device)
@@ -268,7 +269,7 @@ sudo apt install python3-pip
 
 
     
-## <a id="telegram"></a>補充: telegram bot
+## <a id="telegram"></a>Telegram bot
 ### Telegram bot
 - telegram 搜尋 @BotFather 
 
@@ -297,7 +298,7 @@ sudo apt install python3-pip
 
 - 切換到 `@yourbot`
 
-<img src="https://i.imgur.com/0cNkX4Z.jpg" width="300px"/>
+<img src="https://i.imgur.com/zzXL45P.png" width="300px"/>
 
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
@@ -411,4 +412,3 @@ updater = Updater(token=token, use_context=False)
 - 漢偉 @UncleHanWei :題材發想、提供音檔來源、提供硬體設備、參與錄影、debug(tech support)
 - 蔣媽 @yuting0412 : 題材發想、提供硬體設備
 - 郭子偉 @vincentinttsh : support Raspberry pi 4、debug(tech support)、提供硬體設備 、 write github README.md ，提供全方位服務請撥打:0800029000
- 
