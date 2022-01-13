@@ -10,6 +10,7 @@
 - [References](#References)
 - [未來展望](#future)
 - [溫馨感謝愛心助教](#thankTA)
+## [ppt連結](https://docs.google.com/presentation/d/1XCrpMcQiEwSbro5FNwrldORE6NMPBbfv1iDoVzJy5oo/edit?usp=sharing)
 ## <a id="Concept_Develop"></a>Concept Development 發展理念
 * 起因:
     1. 因為只要每到晚上，就會聽到隔壁總是會聽到奇怪的噪音，嚴重影響睡眠品質。但是我們又害怕被看到臉會被惡意報復，所以我們決定開著遙控車車反擊!
