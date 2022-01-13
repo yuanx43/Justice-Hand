@@ -354,9 +354,10 @@ updater = Updater(token=token, use_context=False)
 - 燒錄SD卡
 - Wi-Fi 設定
 - 其他初始設定(開啟ssh設定等等)
-
-
-
+### service
+- sudo service <servicename> start 
+- sudo service <servicename> stop
+- sudo service <servicename> status
 ## <a id="Usge"></a>Usage 如何使用
 【開機即執行偵測按鈕1】
 1. 按下按鈕1(or telegram bot 輸入 /start): 開始感測聲音
