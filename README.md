@@ -286,7 +286,7 @@ sudo apt install python3-pip
 - 接下來輸入 `/mybots`
     - 選擇剛才創造的bot
     <img src="https://i.imgur.com/v2BlNnQ.png" width="300px"/>
-- /setcommend，接下來選擇 `@yourbot`
+- /setcommand，接下來選擇 `@yourbot`
     - 輸入以下commend
     ```typescript=
     start - 開始偵測
