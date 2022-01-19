@@ -33,15 +33,16 @@
 |mbot車車|<img src="http://images.1111.com.tw/discussPic/45/51648645_75727617.5286941.png" width="150px"/>|親情贊助(林宜蔓同學提供)|
 |伺服馬達|<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdHe04RWYSRtZouKLoIqJVSUAHOdwwLwoS2U1VbY9P8XX47X45" width="150px"/>|網購|
 |伺服馬達多功能支架|<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1F1oO-9AuM34WaAzLDipg7UaQwz7DDYseE0q9gmgRe5HKEC4N" width="150px"/>|網購|
-|伺服機擺臂|<img src="https://user-images.githubusercontent.com/63627053/148635985-48353e50-b2a5-4dc3-9d99-78b1a281846e.png" width="150px"/>|皮|
+|伺服機擺臂|<img src="https://user-images.githubusercontent.com/63627053/148635985-48353e50-b2a5-4dc3-9d99-78b1a281846e.png" width="150px"/>|蝦皮|
 |分貝感測器|<img src="https://img.pcstore.com.tw/~prod/M79772911/_sE_9391353439.jpg?pimg=static&P=1621835550" width="150px"/>|蝦皮|
 |MCP3008|<img src="https://user-images.githubusercontent.com/63627053/148636025-e9eeb48a-419a-4f4e-857c-625c74be03ac.png" width="150px"/>|蝦皮|
 |開關鍵|<img src="https://img.shoplineapp.com/media/image_clips/6052c25107ec3137c14b48e4/original.jpg?1616036433" width="150px"/>|親情贊助(林宜蔓同學提供)|
-|喇叭|<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSteuwILNLFZFk9Bk5Ml9J0OnyogxW_qgLRPH-9VpjXnvh9AOn-" width="150px"/>|蝦皮|
+|喇叭|<img src="https://i.imgur.com/FQPKH8K.jpg" width="150px"/>|蕭鈺宸同學提供|
 |杜邦線*n(公母、公公、母母)|<img src="https://user-images.githubusercontent.com/63627053/148636593-841e6c5d-9666-4362-8700-3c6160984a3a.png" width="150px"/>|親情贊助(林宜蔓同學提供)|
 |麵包板|<img src="https://img.eclife.com.tw/photo2011/prod_2017/7/K1020189-A.jpg" width="150px"/>|親情贊助(林宜蔓同學提供)|
 |假手|<img src="https://i1.wp.com/henglong.gr/wp-content/uploads/2021/04/premier-soft-hand-a.jpg?fit=600%2C600&ssl=1" width="150px"/>|蝦皮|
 |4號電池|<img src="https://user-images.githubusercontent.com/63627053/148636983-af1f6cdf-38dd-4381-8f68-1aad00c402cb.png" width="150px"/>|蝦皮|
+|pi camara|<img src="https://www.taiwaniot.com.tw/wp-content/uploads/2019/12/raspberry-pi-camera-v2-camera-600x450.png" width="150px"/>|友情贊助(第七組)|
 
 ## <a id="install_setting"></a>安裝&設定過程
 ### GPIO&設備
@@ -166,7 +167,7 @@ sudo apt install python3-pip
 - 作用：將類比訊號轉換成數位訊號(因為Raspberry Pi沒有支援類比訊號輸入)，每個通道可依類比設備的輸入值傳回一個10位元的數值
 - 安裝套件
     ```terminal=
-    pip3 install gpiozero
+    pip install gpiozero
     ```
 - 引入套件
     ```terminal=
@@ -239,6 +240,20 @@ sudo apt install python3-pip
     ```terminal=
     input_result = gpio.input(btn)
     ```
+### Pi camera
+- 安裝 pi camera套件
+    ```terminal=
+    pip3 install picamera
+    ````
+#### 影片轉檔
+- 需要套件
+    ```terminal=
+    sudo apt install gpac
+    ```
+- 影片如何轉檔
+    ```python=
+    
+    ```
 ### 樹梅派開機啟動按鈕偵測檔`detectpress.py`
 - 要執行的內容（例如想要跑 Python 的程式等等）要寫成 Shell script
 - 創建shell執行檔 `autostart.sh`
@@ -298,22 +313,19 @@ sudo apt install python3-pip
         ```
 
 - 切換到 `@yourbot`
-        
         <img src="https://i.imgur.com/aZcbHYg.png" width="300px" height="600px"/>
    
 
 - 建立群組group&telegram bot
     - Enable telegram bot join groups
-        
         <img src="https://i.imgur.com/zmvwYyC.png" width="300px"/>
     - 自行建立群組+ 邀請telegram bot至group
-    - 實際成果
-        
+    - 成果照
         <img src="https://i.imgur.com/1e4M8jz.png" width="300px"/>
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
 ```python=
-pip3 install python-telegram-bot
+pip install python-telegram-bot
 ```
 - 匯入模組&初始化bot&設定token
 ```python=
@@ -365,17 +377,33 @@ updater = Updater(token=token, use_context=False)
 - Wi-Fi 設定
 - 其他初始設定(開啟ssh設定等等)
 ### service
-- sudo service <servicename> start 
-- sudo service <servicename> stop
-- sudo service <servicename> status
+- `sudo service <servicename> start `
+- `sudo service <servicename> stop`
+- `sudo service <servicename> status`
+
 ## <a id="Usge"></a>Usage 如何使用
 【開機即執行偵測按鈕1】
-1. 按下按鈕1(or telegram bot 輸入 /start): 開始感測聲音
-2. 再次按下按鈕1(or telegram bot 輸入 /stop): 停止感測聲音
-3. 按下按鈕2(or telegram bot 輸入 /play): 撥放背景音樂(ex: 阿彌陀佛)
+1. 按下按鈕1(or telegram bot 輸入 `/start`): 開始感測聲音
+2. 再次按下按鈕1(or telegram bot 輸入 `/stop`): 停止感測聲音
+3. 按下按鈕2(or telegram bot 輸入 `/play`): 撥放背景音樂(ex: 阿彌陀佛)
 4. 遙控車子到門前偵測惡鄰居聲音
 5. 假如超過設定分貝門檻: Justice Hand開始拍打
 6. 拍打完，喇叭播放: 你好吵!!!
+7. 額外功能 telegram 輸入 
+    - `/video`:錄影
+    - `/photo`:拍照
+    > 檔案皆會傳至聊天室內
+## 成果影片&聊天室畫面
+- 聊天室畫面
+    
+    <img src="https://i.imgur.com/03enHxf.png" width="600px"/>
+- 照片畫面
+    
+    <img src="https://i.imgur.com/Bgex5e3.png" width="600px"/>
+
+- [車車打門影片連結](https://youtu.be/IVrHOSAWFUo)
+- [惡鄰居開門了!!](https://youtu.be/wfshMPJA0M0)
+
 
 ## <a id="Usge"></a>Job_Assign
 | 組員   | 工作分配        |
