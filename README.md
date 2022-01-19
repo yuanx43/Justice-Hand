@@ -2,7 +2,7 @@
 - [Concept Development](#Concept_Develop)
 - [硬體設備](#device)
 - [安裝&設定過程](#install_setting)
-- [補充: telegram bot](#telegram)
+- [補充: telegram bot](#telegram);
 - [LSA課堂知識運用](#LSAClass)
 - [Usage 如何使用](#Usge)
 - [Justice Hand Car 照](#picture)
@@ -137,8 +137,8 @@ sudo apt install python3-pip
 - 要先安裝pygame&音樂相關套件
     ```terminal=
     sudo pip3 install pygame
-    sudo apt install libsd12-dev
-    sudo apt install libsd12-mixer-dev
+    sudo apt install libsdl2-dev
+    sudo apt install libsdl2-mixer-dev
     ``` 
 - 引入模組&套件啟動、初始化
     ```python=
@@ -288,18 +288,25 @@ sudo apt install python3-pip
     <img src="https://i.imgur.com/v2BlNnQ.png" width="300px"/>
 - /setcommand，接下來選擇 `@yourbot`
     - 輸入以下commend
-    ```typescript=
-    start - 開始偵測
-	play - 撥放背景音樂
-	stop - 停止偵測
-	play stop - 停止播放音樂
-    ```
-    <img src="https://i.imgur.com/kwSmDlL.jpg" width="300px" height="500px"/>
+        ```typescript=
+        start - 開始偵測
+        play - 撥放背景音樂
+        stop - 停止偵測
+        playstop - 停止播放音樂
+        photo - 拍照
+        video - 錄影
+        ```
 
 - 切換到 `@yourbot`
+        <img src="https://i.imgur.com/aZcbHYg.png" width="300px" height="600px"/>
+   
 
-<img src="https://i.imgur.com/zzXL45P.png" width="300px"/>
-
+- 建立群組group&telegram bot
+    - Enable telegram bot join groups
+        <img src="https://i.imgur.com/zmvwYyC.png" width="300px"/>
+    - 自行建立群組+ 邀請telegram bot至group
+    - 實際成果
+        <img src="https://i.imgur.com/1e4M8jz.png" width="300px"/>
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
 ```python=
