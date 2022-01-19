@@ -166,7 +166,7 @@ sudo apt install python3-pip
 - 作用：將類比訊號轉換成數位訊號(因為Raspberry Pi沒有支援類比訊號輸入)，每個通道可依類比設備的輸入值傳回一個10位元的數值
 - 安裝套件
     ```terminal=
-    pip install gpiozero
+    pip3 install gpiozero
     ```
 - 引入套件
     ```terminal=
@@ -313,7 +313,7 @@ sudo apt install python3-pip
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
 ```python=
-pip install python-telegram-bot
+pip3 install python-telegram-bot
 ```
 - 匯入模組&初始化bot&設定token
 ```python=
