@@ -298,14 +298,17 @@ sudo apt install python3-pip
         ```
 
 - 切換到 `@yourbot`
+        
         <img src="https://i.imgur.com/aZcbHYg.png" width="300px" height="600px"/>
    
 
 - 建立群組group&telegram bot
     - Enable telegram bot join groups
+        
         <img src="https://i.imgur.com/zmvwYyC.png" width="300px"/>
     - 自行建立群組+ 邀請telegram bot至group
     - 實際成果
+        
         <img src="https://i.imgur.com/1e4M8jz.png" width="300px"/>
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
