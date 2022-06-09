@@ -167,7 +167,7 @@ sudo apt install python3-pip
 - 作用：將類比訊號轉換成數位訊號(因為Raspberry Pi沒有支援類比訊號輸入)，每個通道可依類比設備的輸入值傳回一個10位元的數值
 - 安裝套件
     ```terminal=
-    pip install gpiozero
+    sudo pip3 install gpiozero
     ```
 - 引入套件
     ```terminal=
@@ -243,7 +243,7 @@ sudo apt install python3-pip
 ### Pi camera
 - 安裝 pi camera套件
     ```terminal=
-    pip3 install picamera
+    sudo pip3 install picamera
     ````
 #### 影片轉檔
 - 需要套件
@@ -252,7 +252,14 @@ sudo apt install python3-pip
     ```
 - 影片如何轉檔
     ```python=
-    
+    # covert video format
+    def convert(VIDEO_PATH, VIDEO_PATH_mp4):
+        # Record a 15 seconds video.
+        print("Rasp_Pi => Video Recorded! \r\n")
+        # Convert the h264 format to the mp4 format.
+        command = "MP4Box -add " + VIDEO_PATH + " " + VIDEO_PATH_mp4
+        call([command], shell=True)
+        print("\r\nRasp_Pi => Video Converted! \r\n")
     ```
 ### 樹梅派開機啟動按鈕偵測檔`detectpress.py`
 - 要執行的內容（例如想要跑 Python 的程式等等）要寫成 Shell script
@@ -325,7 +332,7 @@ sudo apt install python3-pip
 ### python 套件 python-telegram-bot
 - 安裝pip套件 python-telegram-bot
 ```python=
-pip install python-telegram-bot
+sudo pip3 install python-telegram-bot
 ```
 - 匯入模組&初始化bot&設定token
 ```python=
