@@ -3,8 +3,8 @@ from telethon import TelegramClient
 import subprocess
 
 # Use your own values from https://my.telegram.org
-api_id = 15327260
-api_hash = '5eb6e313b64a21157e207cacae1c0b5d'
+api_id = 
+api_hash = ''
 
 # The first parameter is the .session file name (absolute paths allowed)
 with TelegramClient('myUserName', api_id, api_hash) as client :
