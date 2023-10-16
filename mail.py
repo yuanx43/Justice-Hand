@@ -7,11 +7,11 @@ import datetime
 
 # Which email address want to send
 # 明文的帳密
-to = 'yuanxx43@gmail.com'
+to = ''
 
 # Using specific gmail account
-gmail_user = 'yuanxx43@gmail.com'
-gmail_password = 'k*23054037'
+gmail_user = ''
+gmail_password = ''
 
 # SMTP command
 smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
